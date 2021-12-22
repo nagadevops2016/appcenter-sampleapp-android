@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\INDIA\\Documents\\upload-key.jks')
+            storePassword '1@Nagaraj'
+            keyAlias 'upload'
+            keyPassword '1@Nagaraj'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
